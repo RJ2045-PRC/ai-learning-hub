@@ -1,0 +1,13 @@
+{
+  "name": "ai-learning-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "每日AI学习知识库与公开学习台",
+  "scripts": {
+    "build": "node 学习台资源/生成学习台.cjs && node scripts/build-public.cjs",
+    "publish:daily": "node scripts/publish.cjs"
+  },
+  "dependencies": {
+    "marked": "15.0.12"
+  }
+}

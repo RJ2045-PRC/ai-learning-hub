@@ -1,0 +1,32 @@
+[
+  {
+    "title": "系统地图",
+    "description": "模型、Agent、Harness、Loop、RAG 与记忆",
+    "status": "生成机制已澄清 · 待反馈"
+  },
+  {
+    "title": "外部知识怎样进入回答",
+    "description": "检索、来源核查与 RAG",
+    "status": "时效与对象可应用 · 待深化"
+  },
+  {
+    "title": "经验怎样留下来",
+    "description": "上下文、条件化摘要、来源回查与长期记忆",
+    "status": "信息路径可应用 · 摘要待反馈"
+  },
+  {
+    "title": "任务怎样持续推进",
+    "description": "执行循环、工具失败与停止条件",
+    "status": "已能区分核验 · 待深化"
+  },
+  {
+    "title": "怎样判断真的有效",
+    "description": "评测、对照实验与失败样例",
+    "status": "后续方向"
+  },
+  {
+    "title": "多个 Agent 怎样协作",
+    "description": "分工、沟通成本与反思机制",
+    "status": "后续方向"
+  }
+]
