@@ -1,32 +1,32 @@
 [
   {
-    "title": "系统地图",
-    "description": "模型、Agent、Harness、Loop、RAG 与记忆",
-    "status": "生成机制已澄清 · 待反馈"
+    "title": "模型与信息基础",
+    "description": "Token、Embedding、Context、幻觉；Prompt、角色、输出格式与稳定性",
+    "status": "信息路径可应用 · Embedding等待学"
   },
   {
-    "title": "外部知识怎样进入回答",
-    "description": "检索、来源核查与 RAG",
-    "status": "时效与对象可应用 · 待深化"
+    "title": "Python → 异步 → FastAPI",
+    "description": "先补函数、文件、JSON与HTTP，再学习async/await和接口",
+    "status": "编程起点待确认 · 待学"
   },
   {
-    "title": "经验怎样留下来",
-    "description": "上下文、条件化摘要、来源回查与长期记忆",
-    "status": "信息路径可应用 · 摘要待反馈"
+    "title": "RAG、工具、记忆与规则",
+    "description": "从文档到带来源回答；工具调用、状态、Harness和Loop",
+    "status": "部分概念已介绍 · 最小实践待学"
   },
   {
-    "title": "任务怎样持续推进",
-    "description": "执行循环、工具失败与停止条件",
-    "status": "已能区分核验 · 待深化"
+    "title": "框架、数据库与部署基础",
+    "description": "选一个框架先实践；向量索引、数据更新、持久化与恢复",
+    "status": "待学"
   },
   {
-    "title": "怎样判断真的有效",
-    "description": "评测、对照实验与失败样例",
-    "status": "已介绍检查标准 · 待反馈"
+    "title": "本地模型、量化与服务部署",
+    "description": "依设备比较资源、速度、质量和成本；可观察与可恢复",
+    "status": "待学"
   },
   {
-    "title": "多个 Agent 怎样协作",
-    "description": "分工、沟通成本与反思机制",
-    "status": "后续方向"
+    "title": "完整业务落地",
+    "description": "贯穿知识库助手项目：需求、实现、评测、部署、反馈迭代",
+    "status": "项目目标已确定 · 能力待验证"
   }
 ]

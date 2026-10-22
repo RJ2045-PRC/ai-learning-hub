@@ -21,7 +21,7 @@ const entries = files('日报').sort().reverse().map(file => {
 });
 const concepts=files('概念').map(file=>({title:(read('概念/'+file).match(/^# (.+)$/m)||[])[1]||file,html:render(read('概念/'+file)),path:'概念/'+file}));
 const progressText=read('学习进度.md');
-const data={entries,concepts,roadmap:JSON.parse(read('学习台资源/学习路线.json')),progress:render(progressText),updated: new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'medium',timeStyle:'short'}).format(new Date())};
+const data={entries,concepts,roadmap:JSON.parse(read('学习台资源/学习路线.json')),progress:render(progressText + (fs.existsSync(path.join(root,'能力路线图.md')) ? '\n\n' + read('能力路线图.md') : '')),updated: new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'medium',timeStyle:'short'}).format(new Date())};
 let html=read('学习台资源/模板.html');
 html=html.replace('/*__KNOWLEDGE_DATA__*/', JSON.stringify(data).replace(/</g,'\\u003c'));
 fs.writeFileSync(path.join(root,'学习台.html'),html);

@@ -7,7 +7,7 @@ run('git',['fetch','origin']);
 const ahead=execFileSync('git',['rev-list','--count','HEAD..origin/main'],{cwd:root,encoding:'utf8'}).trim();
 if(ahead!=='0')throw Error('远端有新提交，请先合并后再发布；本地文件未删除。');
 run('npm',['run','build']);
-run('git',['add','README.md','package.json','package-lock.json','.gitignore','scripts','docs','日报','概念','日报索引.md','学习进度.md','学习台.html','学习台资源']);
+run('git',['add','README.md','能力路线图.md','package.json','package-lock.json','.gitignore','scripts','docs','日报','概念','日报索引.md','学习进度.md','学习台.html','学习台资源']);
 const changed=execFileSync('git',['diff','--cached','--name-only'],{cwd:root,encoding:'utf8'}).trim();
 if(changed){const date=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Shanghai'}).format(new Date());run('git',['commit','-m',`Update AI learning journal ${date}`]);}
 run('git',['push','origin','main']);
