@@ -2,7 +2,7 @@
   {
     "title": "模型与信息基础",
     "description": "Token、Embedding、Context、幻觉；Prompt、角色、输出格式与稳定性",
-    "status": "信息路径可应用 · Embedding等待学"
+    "status": "信息路径本例可应用 · Embedding已介绍待反馈"
   },
   {
     "title": "Python → 异步 → FastAPI",
